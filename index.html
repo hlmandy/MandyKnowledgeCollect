@@ -106,11 +106,12 @@
       var gitalk = new Gitalk({
           clientID: 'Ov23liIqEUWOMucw5kC4',
           clientSecret: '1d8223ff357b41fbbc181e1f3f9ba7b5fe69d904',
-          repo: 'MandyApp',
+          repo: 'gitpagetest',
           owner: 'hlmandy',
           admin: ['hlmandy'],
           title: `Document comment ${location.hash.match(/#(.*?)([?]|$)/)[1]}`,
           id: location.hash.match(/#(.*?)([?]|$)/)[1],  // 存放评论的仓库
+          enableHotKey: true,	// 提交评论快捷键(cmd/ctrl + enter)
       })
       // Listen for changes in hash in the URL. If an MD file is found to have changed,
       // refresh the page to solve the problem of using a single digital comment issue for the entire website.
