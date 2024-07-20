@@ -10,3 +10,8 @@ $E=mc^2$
 ```python
 print("hello penguin!")
 ```
+
+## emoji
+
+:penguin:
+
