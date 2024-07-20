@@ -10,8 +10,33 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
+      name: 'PenguinWiki',
+      repo: 'https://github.com/hlmandy/gitpagetest',
       loadSidebar: true,
       //subMaxLevel: 2,
+      // -- 字数统计
+      count:{
+        countable: true,
+        position: 'top',
+        margin: '10px',
+        float: 'right',
+        fontsize:'0.9em',
+        color:'rgb(90,90,90)',
+        language:'chinese',
+        localization: {
+          words: "",
+          minute: ""
+        },
+        isExpected: true
+      },
+      // -- Tab  doc: https://jhildenbiddle.github.io/docsify-tabs/#/
+      tabs: {
+        persist: true, // default
+        sync: true, // default
+        theme: 'classic', // default
+        tabComments: true, // default
+        tabHeadings: true // default
+      }
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
@@ -30,8 +55,15 @@
   <!-- 代码块复制 -->
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
 
+  <!-- 字数统计 -->
+  <script src="//unpkg.com/docsify-count/dist/countable.min.js"></script>
+
+  <!-- Tab -->
+  <!-- docsify-tabs (latest v1.x.x) https://jhildenbiddle.github.io/docsify-tabs/#/ -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+
   <!-- 评论系统 -->
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
 
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
@@ -45,6 +77,6 @@
       // facebook-like distraction free mode
       distractionFreeMode: false
     })
-  </script>
+  </script> -->
 </body>
 </html>

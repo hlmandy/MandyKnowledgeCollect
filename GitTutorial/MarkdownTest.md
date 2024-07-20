@@ -18,3 +18,25 @@ print("hello penguin!")
 
 :penguin:
 
+## callout
+
+> [!tip|style:callout]> 填写你要的内容
+
+
+## tab
+<!-- tabs:start -->
+
+#### **English**
+
+Hello!
+
+#### **French**
+
+Bonjour!
+
+#### **Italian**
+
+Ciao!
+
+<!-- tabs:end -->
+
