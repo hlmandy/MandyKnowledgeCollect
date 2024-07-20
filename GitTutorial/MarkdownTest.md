@@ -24,6 +24,18 @@ $$
 print("hello penguin!")
 ```
 
+```bash
+cd C:
+```
+
+```c
+cout << "hello word!" << endl;
+```
+
+```cpp
+cout << "hello word!" << endl;
+```
+
 ## emoji
 
 :penguin:
