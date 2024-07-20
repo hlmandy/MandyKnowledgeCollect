@@ -22,6 +22,21 @@ print("hello penguin!")
 
 > [!tip|style:callout]> 填写你要的内容
 
+> [!NOTE]> NOTE
+
+> [!TIP]> TIP
+
+> [!WARNING]> WARNING
+
+> [!DANGER]> DANGER
+
+> [!NOTE|style:flat]
+> An alert of type 'note' using alert specific style 'flat' which overrides global style 'callout'.
+
+> [!TIP|style:flat|label:My own heading|iconVisibility:hidden]
+> An alert of type 'tip' using alert specific style 'flat' which overrides global style 'callout'.
+> In addition, this alert uses an own heading and hides specific icon.
+
 
 ## tab
 <!-- tabs:start -->
