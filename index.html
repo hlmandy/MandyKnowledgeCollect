@@ -98,6 +98,29 @@
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-sql.min.js"></script>
 
   <!-- 评论系统 -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
+
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+  <script>
+      var gitalk = new Gitalk({
+          clientID: 'Ov23liIqEUWOMucw5kC4',
+          clientSecret: '1d8223ff357b41fbbc181e1f3f9ba7b5fe69d904',
+          repo: 'MandyApp',
+          owner: 'hlmandy',
+          admin: ['hlmandy'],
+          title: `Document comment ${location.hash.match(/#(.*?)([?]|$)/)[1]}`,
+          id: location.hash.match(/#(.*?)([?]|$)/)[1],  // 存放评论的仓库
+      })
+      // Listen for changes in hash in the URL. If an MD file is found to have changed,
+      // refresh the page to solve the problem of using a single digital comment issue for the entire website.
+      window.onhashchange = function (event) {
+          if (event.newURL.split('?')[0] !== event.oldURL.split('?')[0]) {
+              location.reload()
+          }
+      }
+  </script>
+  
   <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
 
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
