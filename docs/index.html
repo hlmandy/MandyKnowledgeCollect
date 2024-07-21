@@ -11,12 +11,12 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: 'PenguinWiki',
-      logo: './img/logo-main.png',  // -- 好像有了logo就没有name
+      name: 'MandyKnowledgeCollect',
+      //logo: './_image/logo-main.png',  // -- 好像有了logo就没有name
       homepage: 'home.md',
       loadNavbar: true,             // -- 导航栏
       // -- 右上角github链接
-      repo: 'https://github.com/hlmandy/gitpagetest',
+      repo: 'https://github.com/hlmandy/MandyKnowledgeCollect',
       loadSidebar: true,
       //subMaxLevel: 2,
       // -- 字数统计
@@ -37,8 +37,8 @@
       // -- 全文搜索
       search: {
         paths: 'auto',
-        placeholder: '你好，我是企鹅搜索！',
-        noData: '找不到结果',
+        placeholder: 'Search',
+        noData: 'No result',
         depth: 3,
       },
       // -- footer
@@ -48,7 +48,7 @@
           '<hr/>',
           '<footer>',
           '<span>Copyright &copy; 2024 </span>',
-          '<span><a href="https://github.com/Penguin-Go" target="_blank">Penguin Go</a>.</span>',
+          '<span><a href="https://github.com/hlmandy" target="_blank">hlmandy</a>.</span>',
           '</footer>'
           ].join('');
           hook.afterEach(function(html) {
@@ -118,10 +118,12 @@
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
   <script>
+      // register https://github.com/settings/applications/new
+      // https://github.com/settings/applications/2647666
       var gitalk = new Gitalk({
-          clientID: 'Ov23liIqEUWOMucw5kC4',
+        clientID: 'Ov23liIqEUWOMucw5kC4',
           clientSecret: '1d8223ff357b41fbbc181e1f3f9ba7b5fe69d904',
-          repo: 'gitpagetest',
+          repo: 'MandyKnowledgeCollect',
           owner: 'hlmandy',
           admin: ['hlmandy'],
           title: `Document comment ${location.hash.match(/#(.*?)([?]|$)/)[1]}`,
