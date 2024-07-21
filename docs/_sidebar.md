@@ -5,4 +5,5 @@
   * [Sourcetree](GitTutorial/Sourcetree.md)
 
 * [WritingTools]
+  * [Obsidian](WritingTools/Obsidian/Obsidian七七八八.md)
   * [Markdown语法](WritingTools/Markdown语法.md)
