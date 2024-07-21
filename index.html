@@ -41,6 +41,21 @@
         noData: '找不到结果',
         depth: 3,
       },
+      // -- footer
+      plugins: [
+      function(hook) {
+        var footer = [
+          '<hr/>',
+          '<footer>',
+          '<span>Copyright &copy; 2024 </span>',
+          '<span><a href="https://github.com/Penguin-Go" target="_blank">Penguin Go</a>.</span>',
+          '</footer>'
+          ].join('');
+          hook.afterEach(function(html) {
+            return html + footer;
+          });
+        }
+      ],
       // -- Tab  doc: https://jhildenbiddle.github.io/docsify-tabs/#/
       tabs: {
         persist: true, // default
