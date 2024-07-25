@@ -6,13 +6,15 @@
   * [Sourcetree](01_GitTutorial/Sourcetree.md)
 * WritingTools
   * [Latex](02_WritingTools/Latex.md)
-  * [Markdown语法测试](02_WritingTools/Markdown语法测试.md)
+  * [test](02_WritingTools/Markdown_test.md)
   * Obsidian
     * [Obsidian七七八八](02_WritingTools/Obsidian/Obsidian七七八八.md)
     * [画图工具：Excalidraw](02_WritingTools/Obsidian/画图工具：Excalidraw.md)
 * coding
-* 优化求解器
-  * [C++](04_优化求解器/CPLEX_C++.md)
-  * [CPLEX文档&环境](04_优化求解器/CPLEX文档&环境.md)
-  * [DOCplex](04_优化求解器/DOCplex.md)
+* opti_solver
+  * [C++](04_opti_solver/CPLEX_C++.md)
+  * [doc_setting](04_opti_solver/CPLEX_doc_setting.md)
+  * [DOCplex](04_opti_solver/DOCplex.md)
+* mandy的设备配置
+  * [Keychron Q5 自定义按键](99_mandy的设备配置/Keychron Q5 自定义按键.md)
 * [home](home.md)
