@@ -19,4 +19,6 @@
 * mandy_prob_solve
   * [windows右键菜单更改](/88_mandy_prob_solve/windows_context_modify.md)
 * mandy的设备配置
-  * [Keychron Q5 自定义按键](/99_mandy_devices/Keychron_Q5_Setting.md)
+  * [Keychron Q5 自定义按键](/98_mandy_devices/Keychron_Q5_Setting.md)
+* todo
+  * [todo_list](/99_todo/todo_list.md)
