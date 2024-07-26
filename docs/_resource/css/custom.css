@@ -1,0 +1,16 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; /* 确保图片不会超过容器宽度 */
+    height: auto; /* 保持图片原始比例 */
+  }
+
+
+.markdown-body pre code {
+    font-family: Consolas, 'Microsoft YaHei' !important; /* 设置代码块的字体，包括英文字体和中文字体 */
+  }
+
+.markdown-section pre code {
+    font-family: Consolas, 'Microsoft YaHei' !important; /* 设置代码块的字体，包括英文字体和中文字体 */
+}
