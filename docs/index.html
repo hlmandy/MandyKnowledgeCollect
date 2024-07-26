@@ -182,14 +182,16 @@
       // register https://github.com/settings/applications/new
       // https://github.com/settings/applications/2653230
       var gitalk = new Gitalk({
-        ClientID: 'Ov23liGCSKvtavAZKHzO',
-          ClientSecret: 'c3cede68f2dc53fe4ef1851e34d90f2bf6090381',
-          repo: 'MandyKnowledgeCollect',
-          owner: 'hlmandy',
-          admin: ['hlmandy'],
-          title: `Document comment ${location.hash.match(/#(.*?)([?]|$)/)[1]}`,
-          id: location.hash.match(/#(.*?)([?]|$)/)[1],  // 存放评论的仓库
-          enableHotKey: true,	// 提交评论快捷键(cmd/ctrl + enter)
+        clientID: 'Ov23liftvBmMqLfABGCy',
+        clientSecret: '3124e626f7c96cb26b3dc68ccd195abb83aa3e9c',
+        //clientID: 'Ov23liGCSKvtavAZKHzO',
+        //clientSecret: 'c3cede68f2dc53fe4ef1851e34d90f2bf6090381',
+        repo: 'MandyKnowledgeCollect',
+        owner: 'hlmandy',
+        admin: ['hlmandy'],
+        title: `Document comment ${location.hash.match(/#(.*?)([?]|$)/)[1]}`,
+        id: location.hash.match(/#(.*?)([?]|$)/)[1],  // 存放评论的仓库
+        enableHotKey: true,	// 提交评论快捷键(cmd/ctrl + enter)
       })
       // Listen for changes in hash in the URL. If an MD file is found to have changed,
       // refresh the page to solve the problem of using a single digital comment issue for the entire website.
