@@ -5,6 +5,7 @@
   * [GitBash](/01_GitTutorial/02_GitBash.md)
   * [Sourcetree](/01_GitTutorial/03_Sourcetree.md)
   * [VSCode](/01_GitTutorial/04_VSCode.md)
+  * [GitCommendList](/01_GitTutorial/99_GitCommendList.md)
 * WritingTools
   * Obsidian
     * [Obsidian七七八八](/02_WritingTools/01_Obsidian/01_Obsidian_collect.md)

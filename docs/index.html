@@ -16,6 +16,7 @@
       name: 'MandyKnowledgeCollect',
       //logo: './_image/logo-main.png',  // -- 好像有了logo就没有name
       homepage: '_home.md',
+      notFoundPage: '_404_page.md',
       loadNavbar: true,             // -- 导航栏
 	  relativePath: true,
       // -- 右上角github链接
@@ -67,6 +68,51 @@
         tabComments: true, // default
         tabHeadings: true // default
       },
+      markdown: {
+        renderer:{
+          code: function(code, lang, base=null) { 
+                var pdf_renderer = function(code, lang, verify) {
+                  function unique_id_generator(){
+                    function rand_gen(){
+                      return Math.floor((Math.random()+1) * 65536).toString(16).substring(1);
+                    }
+                    return rand_gen() + rand_gen() + '-' + rand_gen() + '-' + rand_gen() + '-' + rand_gen() + '-' + rand_gen() + rand_gen() + rand_gen();
+                  }
+                  if(lang && !lang.localeCompare('pdf', 'en', {sensitivity: 'base'})){
+                    if(verify){
+                      return true;
+                    }else{
+                      var divId = "markdown_code_pdf_container_" + unique_id_generator().toString();
+                      var container_list = new Array();
+                      if(localStorage.getItem('pdf_container_list')){
+                        container_list = JSON.parse(localStorage.getItem('pdf_container_list'));	
+                      }
+                      container_list.push({"pdf_location": code, "div_id": divId});
+                      localStorage.setItem('pdf_container_list', JSON.stringify(container_list));
+                      return (
+                        '<div style="margin-top:'+ PDF_MARGIN_TOP +'; margin-bottom:'+ PDF_MARGIN_BOTTOM +';" id="'+ divId +'">'
+                          + '<a href="'+ code + '"> Link </a> to ' + code +
+                        '</div>'
+                      );
+                    } 
+                  }
+                  return false;
+                }
+                if(pdf_renderer(code, lang, true)){
+                  return pdf_renderer(code, lang, false);
+                }
+                /* SECTION START: Put other custom code rendering functions here
+                  i.e. If the language of the code block is LaTex, 
+                  put the code below to replace original code block with the text: 
+                  'Using LaTex is much better than handwriting!' inside a div container.
+                  if (lang == "latex") {
+                    return ('<div class="container">Using LaTex is much better than handwriting!</div>');
+                  }
+                SECTION END */
+                return (base ? base : this.origin.code.apply(this, arguments));
+              }
+        }
+      }
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
@@ -114,6 +160,18 @@
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-c.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-cpp.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-sql.min.js"></script>
+
+  <!-- 图片zoom -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+
+  <!-- embed pdf -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-pdf-embed-plugin@1.0.8/src/docsify-pdf-embed.min.js"></script>
+  <!-- PDFObject.js is a required dependency of this plugin -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.min.js"></script> 
+  <!-- This is the source code of the pdf embed plugin -->
+  <script src="path-to-file/docsify-pdf-embed.js"></script>
+  <!-- or use this if you are not hosting the file yourself -->
+  <script src="//unpkg.com/docsify-pdf-embed-plugin/src/docsify-pdf-embed.js"></script>
 
   <!-- 评论系统 -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
