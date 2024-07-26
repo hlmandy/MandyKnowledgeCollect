@@ -11,7 +11,7 @@
     * [画图插件_Excalidraw](/02_WritingTools/01_Obsidian/Plugin_Excalidraw.md)
   * [Latex](/02_WritingTools/02_Latex.md)
   * [Markdown_test](/02_WritingTools/09_Markdown_test.md)
-* opti_solver
+* 优化求解器
   * [CPLEX_C++](/04_opti_solver/CPLEX_C++.md)
   * [CPLEX_doc_setting](/04_opti_solver/CPLEX_doc_setting.md)
   * [DOCplex](/04_opti_solver/DOCplex.md)
