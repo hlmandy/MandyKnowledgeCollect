@@ -11,7 +11,9 @@
     * [Obsidian七七八八](/02_WritingTools/01_Obsidian/01_Obsidian_collect.md)
     * [画图插件_Excalidraw](/02_WritingTools/01_Obsidian/Plugin_Excalidraw.md)
   * [Latex](/02_WritingTools/02_Latex.md)
+  * [PicGo](/02_WritingTools/08_PicGo.md)
   * [Markdown_test](/02_WritingTools/09_Markdown_test.md)
+* coding
 * 优化求解器
   * [CPLEX_C++](/04_opti_solver/CPLEX_C++.md)
   * [CPLEX_doc_setting](/04_opti_solver/CPLEX_doc_setting.md)
@@ -19,6 +21,8 @@
 * mandy_prob_solve
   * [GPT公式复制为Latex格式](/88_mandy_prob_solve/gpt_latex_copy.md)
   * [windows右键菜单更改](/88_mandy_prob_solve/windows_context_modify.md)
+* 工作环境设置
+  * [字体设置](/97_work_setting/01_font_setting.md)
 * mandy的设备配置
   * [Keychron Q5 自定义按键](/98_mandy_devices/Keychron_Q5_Setting.md)
 * todo
