@@ -127,3 +127,5 @@ Ciao!
 
 <!-- tabs:end -->
 
+## 字体
+<p style="font-family: '楷体', Courier, monospace;">这是一个使用指定字体的段落。</p>
