@@ -33,7 +33,7 @@ def generate_sidebar(dir_path, output_file):
 
     sidebar_contents = traverse_directory(dir_path, 0)
     with open(output_file, 'w', encoding='utf-8') as f:
-        f.write("<!-- docs/_sidebar.md -->\n\n* [首页](/)\n")
+        ## f.write("<!-- docs/_sidebar.md -->\n\n* [首页](/)\n")
         f.writelines(sidebar_contents)
 
 def has_same_name_in_folder(folder_path):
