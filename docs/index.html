@@ -11,9 +11,12 @@
   <!-- <link rel="stylesheet" href="./_resource/css/overall.css"> -->
   <!-- <link rel="stylesheet" href="./_resource/css/sidebar.css"> -->
   <link rel="stylesheet" href="./_resource/css/custom.css">
-  
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" /> -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar-folder.min.css" />
+
   <!-- icon -->
   <link rel="icon" href="_resource/logo/logo3.ico" type="image/x-icon">
+
 </head>
 <body>
   <div id="app"></div>
@@ -28,7 +31,8 @@
       // -- 右上角github链接
       repo: 'https://github.com/hlmandy/MandyKnowledgeCollect',
       loadSidebar: true,
-      subMaxLevel: 3,
+      sidebarDisplayLevel: 1, // set sidebar display level
+      subMaxLevel: 4,
       // -- 字数统计
       count:{
         countable: true,
@@ -73,6 +77,10 @@
         theme: 'classic', // default
         tabComments: true, // default
         tabHeadings: true // default
+      },
+      latex: {
+        inlineMath   : [['$', '$'], ['\\(', '\\)']], // default
+        displayMath  : [['$$', '$$']],               // default
       },
       markdown: {
         renderer:{
@@ -170,6 +178,14 @@
   <!-- 图片zoom -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
 
+  <!-- latex -->
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <!-- LaTeX display engine -->
+  <script src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <!--  docsify-latex plugin -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-latex@0"></script>
+
   <!-- embed pdf -->
   <script src="//cdn.jsdelivr.net/npm/docsify-pdf-embed-plugin@1.0.8/src/docsify-pdf-embed.min.js"></script>
   <!-- PDFObject.js is a required dependency of this plugin -->
@@ -181,6 +197,9 @@
 
   <!-- 评论系统 -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
+
+  <!-- 侧边栏折叠 https://github.com/iPeng6/docsify-sidebar-collapse -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
 
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>

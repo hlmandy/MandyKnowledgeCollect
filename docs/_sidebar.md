@@ -10,14 +10,15 @@
   * Obsidian
     * [Obsidian七七八八](/02_WritingTools/01_Obsidian/01_Obsidian_collect.md)
     * [画图插件_Excalidraw](/02_WritingTools/01_Obsidian/Plugin_Excalidraw.md)
-  * [Latex](/02_WritingTools/02_Latex.md)
+  * [Latex](/02_WritingTools/02_Latex/02_Latex.md)
+    * [未整理](/02_WritingTools/02_Latex/未整理.md)
   * [PicGo](/02_WritingTools/08_PicGo.md)
   * [Markdown_test](/02_WritingTools/09_Markdown_test.md)
 * coding
-* 优化求解器
-  * [CPLEX_C++](/04_opti_solver/CPLEX_C++.md)
-  * [CPLEX_doc_setting](/04_opti_solver/CPLEX_doc_setting.md)
-  * [DOCplex](/04_opti_solver/DOCplex.md)
+  * opti_solver
+    * [CPLEX_C++](/03_coding/04_opti_solver/CPLEX_C++.md)
+    * [CPLEX_doc_setting](/03_coding/04_opti_solver/CPLEX_doc_setting.md)
+    * [DOCplex](/03_coding/04_opti_solver/DOCplex.md)
 * mandy_prob_solve
   * [GPT公式复制为Latex格式](/88_mandy_prob_solve/gpt_latex_copy.md)
   * [windows右键菜单更改](/88_mandy_prob_solve/windows_context_modify.md)
