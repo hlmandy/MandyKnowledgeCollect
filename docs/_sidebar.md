@@ -13,7 +13,7 @@
   * [Markdown_test](/02_WritingTools/09_Markdown_test.md)
 * coding
   * C++
-    * [用Fitten导致行尾不是CRLF的bug](/03_coding/01_C++/用Fitten导致行尾不是CRLF的bug.md)
+    * [用Fitten导致行尾不是CRLF的bug](/03_coding/01_CPP/用Fitten导致行尾不是CRLF的bug.md)
   * opti_solver
     * [CPLEX_C++](/03_coding/04_opti_solver/CPLEX_C++.md)
     * [CPLEX_doc_setting](/03_coding/04_opti_solver/CPLEX_doc_setting.md)
