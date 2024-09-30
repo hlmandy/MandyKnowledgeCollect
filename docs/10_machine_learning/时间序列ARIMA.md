@@ -251,7 +251,7 @@ $$
 
 ![\text{BIC} = \ln(n)k - 2\ln(L_{\max})](https://math.jianshu.com/math?formula=%5Ctext%7BBIC%7D%20%3D%20%5Cln(n)k%20-%202%5Cln(L_%7B%5Cmax%7D))
 
-##### HQIC(Hannan–Quinn Information Criterion)[[10\]](#fn10)
+##### HQIC(Hannan–Quinn Information Criterion)[[../02_WritingTools/_02_Latex/03_cleveref]](#fn10)
 
 ![\text{HQIC} = 2k\ln(\ln(n)) -2\ln(L_{\max})](https://math.jianshu.com/math?formula=%5Ctext%7BHQIC%7D%20%3D%202k%5Cln(%5Cln(n))%20-2%5Cln(L_%7B%5Cmax%7D))
 

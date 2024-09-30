@@ -198,7 +198,7 @@ git branch -a   ## -- 查看所有分支
 
 ![](_assets/git_list_branch.png)
 
-### 6.2 新建/切换分支
+### 6.2 新建/切换分支/本地_远程分支匹配
 
 ```bash
 # 新建分支
@@ -208,10 +208,12 @@ git branch 新分支名
 git chekout 分支名
 ## or
 git switch 分支名     ## -- 这是新版的命令，推荐！
+
+# 本地分支与远程分支匹配
+ git branch -u origin/<远程分支> <本地分支>
 ```
 
 ![](_assets/git_switch_branch.png)
-
 ### 6.3 push/pull 分支
 
 ![](_assets/git_push_pull.png)

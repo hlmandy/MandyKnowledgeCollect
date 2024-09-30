@@ -63,6 +63,8 @@ if (OMUtil::isExportModel)
 
 ### 设置solver参数
 
+#### 待整理
+
 ```c++
 _solver.setParam(IloCplex::EpGap, 0.005);
 _solver.setParam(IloCplex::TiLim, 18000);
@@ -79,6 +81,16 @@ _solver.setParam(IloCplex::MIRCuts, -1);
 _solver.setParam(IloCplex::ZeroHalfCuts, -1);
 _solver.setParam(IloCplex::MCFCuts, -1);
 
+```
+
+#### LP
+
+
+#### IP
+```c++
+_solver.setParam(lloCplex::TiLim, 120 * 60);
+_solver.setParam(lloCplex::EpGap, 0.01);
+_solver.setParam(lloCplex::Param::MlP::Limits::Nodes, 50); // --- 设置node个数
 ```
 
 ### 更改变量类型（LP->IP）
